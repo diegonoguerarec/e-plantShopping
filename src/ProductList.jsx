@@ -11,8 +11,8 @@ function ProductList({ onHomeClick }) {
 
     const dispatch = useDispatch();
 
-    const handleAddToCart = (plant) => {
-        dispatch(addItem(plant));
+    const handleAddToCart = (product) => {
+        dispatch(addItem(product));
 
         setAddedToCart((prevState) => ({ // Update the local state to reflect that the product has been added
             ...prevState, // Spread the previous state to retain existing entries
